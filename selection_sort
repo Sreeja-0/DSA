@@ -1,0 +1,13 @@
+#selection sort
+a=[7,5,16,2,30]
+n=len(a)
+print('given array: ',a)
+for i in range(n):
+    min_index=i
+    for j in range(i+1,n):
+        if(a[j]<a[min_index]):
+            min_index=j
+            
+    a[i],a[min_index]=a[min_index],a[i]
+    print('sorted array : ',a)
+print('sorted array : ',a)
